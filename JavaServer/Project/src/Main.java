@@ -22,9 +22,9 @@ public class Main {
             int opcio = Integer.valueOf(llegirLinia("Opció:"));
             
             switch (opcio) {
-                case 0: WsServidor.main(args);    break;
-                case 1: WsGuiClient.main(args);    break;
-                case 2: WsClient.main(args);    break;
+                case 0: WsServidor.main(args);      break;
+                case 1: WsGuiClient.main(args);     break;
+                case 2: WsClient.main(args);        break;
                 case 3: running = false;            break;
                 default: break;
             }
