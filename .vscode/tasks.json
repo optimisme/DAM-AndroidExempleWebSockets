@@ -4,7 +4,7 @@
     {
       "label": "Compile for UNIX",
       "type": "shell",
-      "command": "./build.sh",
+      "command": "cd JavaServer/ && ./build.sh && cd ..",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -13,7 +13,7 @@
     {
       "label": "Compile for PowerShell",
       "type": "shell",
-      "command": "./build.sh",
+      "command": "cd JavaServer/ && ./build.ps1 && cd ..",
       "group": {
         "kind": "build",
         "isDefault": true
