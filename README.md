@@ -2,22 +2,43 @@
 
 Exemple de connexió amb WebSockets a través de android.
 
+### Compilació i funcionament ###
+
+Cal el 'Maven' per compilar el projecte
+```bash
+cd JavaServer
+mvn clean
+mvn compile
+```
+
+Per executar el projecte a Windows cal
+```bash
+cd JavaServer
+.\run.ps1 com.project.Main
+```
+
+Per executar el projecte a Linux/macOS cal
+```bash
+cd JavaServer
+./run.sh com.project.Main
+```
+
 - Fer anar el servidor de la carpeta 'Server' amb:
 ```
-javac -cp "lib/*:." WsServidor.java
-java -cp "lib/*:." WsServidor
+cd JavaServer
+./run.sh com.project.WsServidor
 ```
 
 - Fer anar el client Java
 ```
-javac -cp "lib/*:." WsClient.java
-java -cp "lib/*:." WsClient
+cd JavaServer
+./run.sh com.project.WsClient
 ```
 
 - Fer anar el client Java amb GUI
 ```
-javac -cp "lib/*:." WsGuiClient.java
-java -cp "lib/*:." WsGuiClient
+cd JavaServer
+./run.sh com.project.WsGuiClient
 ```
 
 - Amb android studio obrir el projecte i arrencar l'emulador.
